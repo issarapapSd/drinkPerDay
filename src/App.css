@@ -1,0 +1,102 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.dropDownContainer{
+  padding-left: 70%;
+  padding-top: 60%;
+  padding-right: 1rem;
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+.app-drop-down-container {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+
+}
+
+.app-drop-down-container button {
+  padding: 15px 20px;
+  box-shadow: 0 0 25px -20px #dbdbdb;
+  flex: 1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  border: .3px solid #919191;
+}
+
+.app-drop-down-container ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: calc(100% + 5px);
+  min-width: 100%;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #d4d4d4;
+  list-style: none;
+}
+
+.app-drop-down-container ul li{
+  background-color: #fcfcfc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color ease .2s;
+}
+.app-drop-down-container ul li:hover{
+  background-color: #000000;
+  color: #fcfcfc;
+} 
+
